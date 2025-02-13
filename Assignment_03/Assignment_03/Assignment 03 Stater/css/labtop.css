@@ -1,0 +1,282 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #626669;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+a {
+  color: #626669;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: #626669;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url(../images/banner.jpg);
+  background-size: cover; /* The image is resized to be as large as possible while maintaining its aspect ratio */
+  background-position: center; /* Specifies a pair of XY coordinates to position an object relative to the edges of the element's box */
+  height: 60vh;
+  width: auto;
+}
+
+.banner-text {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 75%);
+}
+
+.banner-text > h1 {
+  font-size: 52px;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: center; /* Aligns the items of the flex container when the items do not use all available space on the main axis */
+  align-items: center;
+}
+
+.nav:first-child {
+  border-left: 1px solid #dee2e6;
+}
+
+.nav {
+  color: #343a40;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px 30px;
+  text-decoration: none;
+  justify-content: center;
+  text-transform: uppercase;
+  border-right: 1px solid #dee2e6;
+}
+
+.icon {
+  color: #4dabf7;
+}
+
+/* avatar */
+.a-avatar {
+  height: 60px;
+  position: relative;  /* relative position */
+}
+.avatar {
+  transform: scale(8);
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+/* CAREER OBJECTIVES - PERSONAL INFORMATION */
+li {
+  list-style: none;
+  margin-left: -30px;
+}
+
+.icon1 {
+  color: #4dabf7;
+}
+
+.target,
+.personal-info {
+  padding: 100px 50px 50px;
+}
+
+.personal-info {
+  background-color: #f1f3f5;
+}
+
+/* EXPERIENCE ~ SKILLS  */
+.cong-ty {
+  position: relative; /* vị trí tương đối */
+}
+
+.cong-ty::before {
+  content: "";
+  position: absolute; /* vị trí tuyệt đối */
+  background-color: #4dabf7;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /* bán kính đường viền 50% */
+  left: -30px;
+  top: 8px;
+}
+
+.job-info .card {
+  height: 100%;
+}
+
+.icon3 {
+  color: #4dabf7;
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  border: 1px solid #4dabf7;/* defines a solid border */
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.dark {
+  background-color: #4dabf7;
+  height: 2px;
+  width: 45px;
+  display: inline-block;/* displays list items horizontally */
+}
+
+.light {
+  background-color: #dee2e6;
+}
+/* CERTIFICATES - AWARDS */
+.chung-chi-img {
+  width: 230px;
+}
+
+.chung-chi1 {
+  border-left: 2px solid #f59f00;/* xác định đg viền bên dưới */
+}
+
+.chung-chi2 {
+  border-top: 2px solid #f59f00;/* xd dg viền bên trên */
+  padding: 50px 0px 10px;
+}
+
+/* DU AN */
+.da-content {
+  display: grid; /* creates a block-level grid */
+  grid-template-columns: repeat(3, 1fr); /* grid column template */
+  column-gap: 20px;/* column size and spacing is 20px */
+}
+
+.da-table {
+  height: 350px;
+  border-collapse: collapse; /* The space between the borders of the table is removed, leaving only a single border */
+}
+
+.column1 {
+  width: 25%;
+}
+
+.cv1 {
+  padding: 20px 8px;
+  font-weight: bold;
+  border: 1px solid #dee2e6;
+}
+
+.cv2 {
+  display: flex;
+  align-items: center; /*  default alignment for items inside the flexbox or grid container */
+  gap: 32px;
+  padding: 12px 8px;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+
+.cv2-1 {
+  display: flex; /* Makes the elements flexible */
+  align-items: center;
+  gap: 8px;
+}
+
+.cv2-2 {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+tr {
+  border: 1px solid #dee2e6;
+}
+
+td {
+  padding: 12px 12px; /* padding top 12px right 12px */
+  vertical-align: top;
+}
+
+.blue-background {
+display: inline-block;
+background-color: #4dabf7;
+color: #fff;
+padding: 0 10px;
+border-radius: 9px;
+}
+
+/* FOOTER */
+.footer {
+display: flex;
+justify-content: center;
+gap: 50px;
+padding: 30px 30px;
+margin-bottom: 0;
+}
+
+.icon5 {
+font-size: 30px;
+color: #4dabf7;
+}
+
+.footer a:link,
+.footer a:visited {
+color: #343a40;
+text-decoration: none;
+display: flex;
+align-items: center;
+}
+
+/* PROJECT CHARTER */
+.bg-icon {
+background-color: #972bc9;
+}
+
+.bb {
+border-bottom: 1px dotted rgb(7, 187, 103);
+}
+
+/* link back to digital-cv page */
+.digital-cv {
+position: absolute;
+top: 20px;
+right: 40px;
+}
+
+.digital-cv:hover {
+border: 2px solid #2929da;
+}
+
+/* MISCELLANEOUS */
+/* create box-shadow for blocks */
+.cv,
+.kn {
+box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* create effect for project blocks */
+.cv:hover {
+transform: translateY(-5px);
+transition: transform 0.2s ease-in;
+}
